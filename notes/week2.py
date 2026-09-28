@@ -142,3 +142,7 @@ print(rList)
 # sList = [1,2,3,4,5,'a','b','c','d','e'] 
 # sList[4:-1] = 'nnn'   ## replace
 # print(sList)
+
+franken_1 = open("data/frankenstein.txt").read()
+
+print (franken_1)
