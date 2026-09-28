@@ -54,7 +54,7 @@ x = 14
 y = 17.4
 z = "today is a fine day for sailing!"
 #make sure to review this part
-print(str(z))
+print(type(z))
 
 #------------------------------------------------------------------------
 
