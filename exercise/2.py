@@ -123,7 +123,8 @@ print("  Radishes")
 # "vegetables" (defined above), but with the first letter of each item capitalized.
 # (The list should contain the item that you added to the list in task 17.)
 
-
+for el in vegetables:
+	print(el.capitalize())
 
 
 #------------------------------------------------------------------------
@@ -139,14 +140,17 @@ print("  9-18-25")
 # statement displays "9-18-25".
 
 
-separator = "?"
-glue = "?"
+separator = "/"
+glue = "-"
 parts = "9/18/25".split(separator)
 print(parts[-1])
 print(glue.join(parts))
 
 #------------------------------------------------------------------------
 
+
+# I had to use AI to trouble shoot because I kept getting eta and theta together. 
+# I couldn't find why I was getting eta theta, eta theta and why it wasn't appending before, so I used some extra help
 print("\n------")
 print("Task 23: All together now")
 print("Expected output: alpha, beta, gamma, delta, epsilon, zeta, eta, theta")
@@ -161,11 +165,11 @@ print("Expected output: alpha, beta, gamma, delta, epsilon, zeta, eta, theta")
 
 greek = ["alpha", "beta", "gamma", "delta", "epsilon","zeta"]
 new_letters = "eta theta"
-new_letters_list = [] # <-- replace this
+new_letters_list = new_letters.split()
 
 for letter_name in new_letters_list:
-	pass # <-- and replace this
+	greek.append(letter_name) #<-- and replace this
 
-glue = "?" # <-- and replace this
+glue = ", " # <-- and replace this
 
 print(glue.join(greek))
